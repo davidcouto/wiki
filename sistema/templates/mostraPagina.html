@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Pagina - {{pagina.nome}}</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>{{pagina.nome}}</h1>
+	{{pagina.conteudo|safe}}
+    <br/>
+	<a class="btn btn-info" href="/wiki/{{pagina.nome}}/editar/">Edite esta pagina.</a>
+  </body>
+</html>

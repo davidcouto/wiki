@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Editar Pagina: {{pagina.nome}}</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>Editando: {{pagina.nome}}</h1>
+    <form method="post" action="/wiki/{{pagina.nome}}/salvar/">
+	  {%csrf_token%}
+	  <textarea name="conteudo" rows="20" cols="60">{{pagina.conteudo}}</textarea>
+	  <br/>
+	  <input class="btn btn-success" type="submit" value="Salvar Pagina!"/>
+	</form>
+  </body>
+</html>
